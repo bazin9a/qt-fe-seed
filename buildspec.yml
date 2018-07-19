@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
+      - npm install npm -g
       - npm install
       - echo "test aws 1"
       # Upgrade AWS CLI to the latest version
