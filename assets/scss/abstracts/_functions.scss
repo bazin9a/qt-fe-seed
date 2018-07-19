@@ -1,0 +1,4 @@
+
+@function get-object-sizes($size) {
+    @return map-get($object-sizes, $size);
+}

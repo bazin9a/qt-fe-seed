@@ -1,0 +1,29 @@
+/* //Button
+.btn {
+    display: block;
+    color: $white;
+    border-color: transparent;
+  
+    &:disabled, 
+    &.disabled {  
+      pointer-events: none;
+    }
+  }
+  
+  //Alternate Button
+  .btn.alt {
+    color: $blue;
+  } */
+
+
+
+%border-default {
+  border-style: solid;
+  border-width: 0.5px 0.5px 0 0;
+}
+
+.border-grey-light {
+  @extend %border-default;
+  border-color: $grey-light;
+}
+

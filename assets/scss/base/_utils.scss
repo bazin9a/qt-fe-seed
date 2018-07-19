@@ -1,0 +1,14 @@
+.no-appearance {
+    background-color: $transparent;
+    border: none;
+    @include no-apearance;
+}
+
+
+.align-center {
+text-align: center;
+}
+
+.padding-md {
+    padding: 5em;
+}
