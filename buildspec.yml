@@ -5,26 +5,22 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - npm install
-
+      - echo "test aws 1"
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
   pre_build:
     commands:
       # Discover and run unit tests in the 'tests' directory
       - npm test
+      - echo "test aws 2"
   post_build:
     commands:
       # Remove existing node_modules to clear dev dependencies
       - rm -r node_modules
-
       # Install runtime dependencies
       - npm install --production
+      - echo "test aws 3"
 artifacts:
   type: zip
   files:
-    - README.md
-    - package.json
-    - app.js
-    - .ebextensions/*
-    - node_modules/**/*
-    - public/**/*
+    - '**/*'

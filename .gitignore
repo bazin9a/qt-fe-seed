@@ -99,4 +99,4 @@ typings/
 !.vscode/extensions.json
 
 ### Assets ###
-assets/font/*
+node_modules/*
